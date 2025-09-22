@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../styles/Login.css'
 import { useNavigate } from 'react-router-dom';
 import api from './util/api'
-import { useAuth } from '../context/authContext';
+import { useAuth } from '../context/AuthContext';
 import loading from '../assets/loading.gif'
 
 const Login = () => {
