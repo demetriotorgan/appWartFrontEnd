@@ -1,6 +1,6 @@
 import './App.css'
 import Banner from './componentes/Banner'
-import { AuthProvider } from './context/authContext'
+import { AuthProvider } from './context/AuthContext'
 import ProtectedRoute from './componentes/ProtectedRoute'
 import ProtectedLayout from './componentes/ProtectedLayout'
 import Jogos from './componentes/Paginas/Jogos'
