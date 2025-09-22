@@ -1,0 +1,67 @@
+.historicos-jogos {
+  width: 100%;
+  padding: 1rem;
+  background: var(--cor-fundo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.historicos-jogos h2 {
+  color: var(--cor-accent);
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid var(--cor-secundaria);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Card de jogo realizado */
+.jogo-realizado {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border: 2px solid var(--cor-secundaria);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.jogo-realizado:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+/* Lista de infos */
+.jogo-realizado ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jogo-realizado ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid var(--cor-secundaria);
+  background: rgba(216, 189, 160, 0.08);
+  border-radius: 4px;
+}
+
+/* Destaque especial para a missão */
+.jogo-realizado ul li:nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--cor-accent);
+  border-left: 3px solid var(--cor-accent);
+  background: rgba(248, 77, 68, 0.08);
+}

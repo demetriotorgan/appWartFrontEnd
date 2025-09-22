@@ -1,0 +1,85 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis globais */
+:root {
+  --cor-primaria: #262020;
+  --cor-secundaria: #D8BDA0;
+  --cor-accent: #F84D44;
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #222;
+  --cor-texto-claro: #fff;
+
+  --font-base: 'Roboto', sans-serif;
+  --font-titulo: 'Oswald', sans-serif;
+
+  --espaco-xs: 0.25rem;
+  --espaco-sm: 0.5rem;
+  --espaco-md: 1rem;
+  --espaco-lg: 2rem;
+  --espaco-xl: 4rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --container-max: 1200px;
+}
+
+/* Body padrão */
+body {
+  font-family: var(--font-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+/* Garantir imagens fluidas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botões */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Containers reutilizáveis */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--espaco-md);
+}
+
+/* Classes utilitárias */
+.text-center {
+  text-align: center;
+}
+
+.mt-md {
+  margin-top: var(--espaco-md);
+}
+.mb-md {
+  margin-bottom: var(--espaco-md);
+}
+

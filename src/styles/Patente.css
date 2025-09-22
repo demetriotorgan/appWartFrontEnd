@@ -1,0 +1,86 @@
+.patente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--cor-secundaria);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  margin: 1.5rem auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* detalhe militar — listras diagonais ao fundo */
+.patente::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(216, 189, 160, 0.05),
+    rgba(216, 189, 160, 0.05) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  z-index: 0;
+}
+
+.patente-atual {
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+.patente-atual h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--cor-accent);
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.patente-atual img {
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.5));
+}
+
+/* lista de informações */
+.dados-patente {
+  z-index: 1;
+  width: 100%;
+}
+
+.dados-patente ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dados-patente li {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--cor-secundaria);
+  border-radius: 4px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+.dados-patente li:hover {
+  background: rgba(216, 189, 160, 0.15);
+  border-left-color: var(--cor-accent);
+}

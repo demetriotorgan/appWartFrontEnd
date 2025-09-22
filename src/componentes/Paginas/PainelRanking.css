@@ -1,0 +1,87 @@
+.painel-ranking {
+  width: 100%;
+  padding: 1rem;
+  background: var(--cor-fundo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.painel-ranking h2 {
+  color: var(--cor-accent);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  border-bottom: 3px solid var(--cor-secundaria);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Card do jogador */
+.card-resultado {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border: 2px solid var(--cor-secundaria);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-resultado:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+/* Lista de dados */
+.card-resultado ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Posição destacada */
+.card-resultado ul li:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--cor-accent);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 0.3rem;
+}
+
+/* Box da patente */
+.card-resultado ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  background: rgba(216, 189, 160, 0.15);
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.card-resultado ul li:nth-child(2) img {
+  width: 50px;
+  height: auto;
+}
+
+/* Infos do jogador */
+.card-resultado ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-resultado ul li strong {
+  color: var(--cor-secundaria);
+}

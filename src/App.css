@@ -1,0 +1,36 @@
+.app-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header | Main | Footer */
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh; /* adiciona altura mínima para cobrir a tela */
+
+}
+
+/* Header fixo no topo */
+.app-header {
+  background: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  text-align: center;
+}
+/* Área principal */
+.app-main {
+  display: flex;
+  flex-direction: column;  
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;  
+}
+/* Footer fixo no fim */
+.app-footer {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  text-align: center;
+  padding: var(--espaco-sm);
+  font-size: 0.9rem;
+}
